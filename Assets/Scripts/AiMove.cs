@@ -13,28 +13,6 @@ public class AiMove : MonoBehaviour
     private void Awake()
     {
         _navMesh = GetComponent<NavMeshAgent>();
-
         _navMesh.SetDestination(_moveTransform.position);
     }
-    /* private void Start()
-    {
-        _navMesh.SetDestination(_moveTransform.position);
-    }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            ToggleMovement();
-        }
-    }
-    private void Init()
-    {
-        _navMesh = GetComponent<NavMeshAgent>();
-        _navMesh.isStopped = true;
-    }
-
-    private void ToggleMovement()
-    {
-        _navMesh.isStopped = !_navMesh.isStopped;
-    } */
-} 
+}
