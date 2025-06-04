@@ -19,9 +19,9 @@ public class Player : MonoBehaviour, IDamagable
 
     public void TakeDamage(int value)
     {
-        //_status.CurrentHp.Value -= value;
+        _status.CurrentHp.Value -= value;
 
-        //if (_status.CurrentHp.Value <= 0) Dead();
+        if (_status.CurrentHp.Value <= 0) Dead();
     }
 
     public void Dead()

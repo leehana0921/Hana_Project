@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DesignPattern;
 
 
 
@@ -22,6 +23,6 @@ public class PlayerStatus : MonoBehaviour
     [field: Range(0, 500)]
     public int MaxHP { get; set; }
 
-
+    public ObservableProperty<int> CurrentHp { get; private set; } = new();
 
 }
